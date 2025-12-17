@@ -70,8 +70,10 @@ novatech-demo/
 
 ## Available Commands
 
+Run these from the project root (`novatech-demo/`):
+
 ```bash
-npm run dev         # Start local server (http://localhost:3000)
+npm run dev         # Start local server
 npm run lint        # Run ESLint
 npm run format      # Run Prettier
 npm run test        # Run all tests
@@ -110,6 +112,8 @@ FIGMA_ACCESS_TOKEN=your_figma_token  # Optional
 ```bash
 # Open the website
 npm run dev
+
+Open: **http://localhost:3000/pages/index.html**
 
 # In another terminal, launch Claude Code
 claude
