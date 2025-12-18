@@ -1,6 +1,7 @@
 {
   "name": "novatech-demo",
   "version": "1.0.0",
+  "type": "module",
   "description": "NovaTech Solutions - Demo project for Advanced Claude Code course",
   "scripts": {
     "dev": "npx serve src -l 3000",
@@ -9,7 +10,7 @@
     "format": "prettier --write \"src/**/*.{html,css,js}\"",
     "format:check": "prettier --check \"src/**/*.{html,css,js}\"",
     "test": "npm run test:unit && npm run test:e2e",
-    "test:unit": "node --test tests/unit/",
+    "test:unit": "node --test 'tests/unit/**/*.test.js'",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui"
   },

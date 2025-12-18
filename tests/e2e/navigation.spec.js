@@ -21,13 +21,13 @@ test.describe('Navigation', () => {
 
   test('should navigate to services page', async ({ page }) => {
     await page.click('text=Services');
-    await expect(page).toHaveURL(/services\.html/);
+    await expect(page).toHaveURL(/\/pages\/services/);
     await expect(page.locator('.page-hero__title')).toContainText('Our Services');
   });
 
   test('should navigate to contact page', async ({ page }) => {
     await page.click('text=Contact');
-    await expect(page).toHaveURL(/contact\.html/);
+    await expect(page).toHaveURL(/\/pages\/contact/);
     await expect(page.locator('.page-hero__title')).toContainText('Contact Us');
   });
 
