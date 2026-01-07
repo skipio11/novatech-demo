@@ -107,7 +107,8 @@
   }
 
   .nav__menu.is-open {
-    display: flex;
+    /*display: flex;*/
+    display: none;  /* BUG: menu never shows */
   }
 
   .nav__item {
