@@ -14,8 +14,15 @@ const CLASSES = {
 };
 
 /**
- * Filter projects by category
- * @param {string} category - Category to filter by ('all' shows everything)
+ * Filters visible project cards by category, hiding those that don't match.
+ * Uses the `data-category` attribute on each card to determine membership.
+ * Passing 'all' removes all filters and shows every project.
+ *
+ * @param {string} category - Category slug to filter by (e.g. 'web', 'mobile'), or 'all' to show everything
+ * @returns {void}
+ * @example
+ * filterProjects('web');   // Shows only cards with data-category="web"
+ * filterProjects('all');   // Shows all project cards
  */
 function filterProjects(category) {
   const projects = document.querySelectorAll(SELECTORS.projectCard);
